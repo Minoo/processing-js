@@ -1,0 +1,25 @@
+//	Processing.js Example
+
+void setup() {
+  size(10, 10);
+}
+
+void draw() {
+  int intVar = 0;
+  byte intByte = parseByte(intVar);
+  println("int:0 = " + intByte);
+
+  int[] intArray = {0, 1, 130};
+  byte[] intByteArray = parseByte(intArray);
+  println("int Array: {0, 1, 130} = " + intByteArray);
+  
+  char charVar = 't';
+  byte charByte = parseByte(charVar);
+  println("char: 't' = " + charByte);
+  
+  char[] charArray = {'t', 'M'};
+  byte[] charByteArray = parseByte(charArray);
+  println("char Array: {'t', 'M'} = " + charByteArray);
+  
+  noLoop();
+}

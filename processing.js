@@ -8056,6 +8056,18 @@
       }
     };
 
+    /**
+     * Converts the passed parameter to the function to 
+     * its char value by calling p['byte']() function. 
+     *
+     * @param {int, char} {int[], char[]} the parameter to be converted to char
+     *
+     * @return {byte|byte[]} retrurns a byte or an array of bytes
+     */    
+    p.parseByte = function(what) {
+      return p['byte'](what);
+    }
+    
     // a byte is a number between -128 and 127
     p['byte'] = function(aNumber) {
       if (aNumber instanceof Array) {
@@ -16302,7 +16314,7 @@
       "mouseReleased", "mouseScroll", "mouseScrolled", "mouseX", "mouseY",
       "name", "nf", "nfc", "nfp", "nfs", "noCursor", "noFill", "noise",
       "noiseDetail", "noiseSeed", "noLights", "noLoop", "norm", "normal",
-      "noSmooth", "noStroke", "noTint", "ortho", "parseBoolean", "parseChar", "peg", "perspective", "PFont", "PImage",
+      "noSmooth", "noStroke", "noTint", "ortho", "parseBoolean", "parseByte", "parseChar", "peg", "perspective", "PFont", "PImage",
       "pixels", "PMatrix2D", "PMatrix3D", "PMatrixStack", "pmouseX", "pmouseY",
       "point", "pointLight", "popMatrix", "popStyle", "pow", "print",
       "printCamera", "println", "printMatrix", "printProjection", "PShape","PShapeSVG",

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Processing.js test of parseByte()</title>
+
+    <script src="../../../processing.js"></script>
+    <canvas data-processing-sources="parseByte.pjs" width="200" height="200"></canvas>
+  <body>
+    <p>
+      Converts the passed parameter to the function to its byte value. It will return an array of bytes if an array is passed in.</p>
+
+    <h2>
+        Test:</h2>
+    <pre>
+void setup() {
+  size(10, 10);
+}
+
+void draw() {
+  int intVar = 0;
+  byte intByte = parseByte(intVar);
+  println("int:0 = " + intByte);
+
+  int[] intArray = {0, 1, 130};
+  byte[] intByteArray = parseByte(intArray);
+  println("int Array: {0, 1, 130} = " + intByteArray);
+  
+  char charVar = 't';
+  byte charByte = parseByte(charVar);
+  println("char: 't' = " + charByte);
+  
+  char[] charArray = {'t', 'M'};
+  byte[] charByteArray = parseByte(charArray);
+  println("char Array: {'t', 'M'} = " + charByteArray);
+  
+  noLoop();
+}
+    </pre>
+    <br />
+</body>
+</html>
