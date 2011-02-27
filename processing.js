@@ -16302,7 +16302,7 @@
       "mouseReleased", "mouseScroll", "mouseScrolled", "mouseX", "mouseY",
       "name", "nf", "nfc", "nfp", "nfs", "noCursor", "noFill", "noise",
       "noiseDetail", "noiseSeed", "noLights", "noLoop", "norm", "normal",
-      "noSmooth", "noStroke", "noTint", "ortho", "parseBoolean", "peg", "perspective", "PFont", "PImage",
+      "noSmooth", "noStroke", "noTint", "ortho", "parseBoolean", "parseChar", "peg", "perspective", "PFont", "PImage",
       "pixels", "PMatrix2D", "PMatrix3D", "PMatrixStack", "pmouseX", "pmouseY",
       "point", "pointLight", "popMatrix", "popStyle", "pow", "print",
       "printCamera", "println", "printMatrix", "printProjection", "PShape","PShapeSVG",
