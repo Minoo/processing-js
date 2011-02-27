@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Processing.js test of parseChar()</title>
+
+    <script src="../../../processing.js"></script>
+    <canvas data-processing-sources="parseChar.pjs" width="200" height="200"></canvas>
+  <body>
+    <p>
+      Converts the passed parameter to the function to its char value. It will return an array of chars if an array is passed in.</p>
+
+    <h2>
+        Test:</h2>
+    <pre>
+void setup() {
+  size(10, 10);
+}
+
+void draw() {
+  int intVar = 65;
+  char intChar = parseChar(intVar);
+  println("int: 65 = " + intChar);
+
+  int[] intArray = {66, 65};
+  char[] intCharArray = parseChar(intArray);
+  println("int Array: {66, 65} = " + intCharArray);
+  
+  byte byteVar = 65;
+  char byteChar = parseChar(byteVar);
+  println("byte: 65 = " + byteChar);
+  
+  byte[] byteArray = {65, 66};
+  char[] byteCharArray = parseChar(byteArray);
+  println("byte Array: {65, 66} = " + byteCharArray);
+  
+  noLoop();
+}
+    </pre>
+    <br />
+</body>
+</html>

@@ -8068,7 +8068,19 @@
         return (0 - (aNumber & 0x80)) | (aNumber & 0x7F);
       }
     };
-
+    
+    /**
+     * Converts the passed parameter to the function to 
+     * its char value by calling p['char']() function. 
+     *
+     * @param {int, byte} {int[], byte[]} the parameter to be converted to char
+     *
+     * @return {char|char[]} retrurns a char or an array of chars
+     */    
+    p.parseChar = function(what) {
+      return p['char'](what);
+    }
+    
     p['char'] = function(key) {
       if (typeof key === "number") {
         return new Char(String.fromCharCode(key & 0xFFFF));
