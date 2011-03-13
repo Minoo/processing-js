@@ -1,0 +1,21 @@
+// @pjs preload must be used to preload the image
+/* @pjs preload="data/test.png"; */
+
+PImage img = loadImage("data/test.png");
+
+void setup() {
+  size(200, 200);
+  noLoop();
+}
+
+void draw() {
+  background(color(100,255,100));
+  //image(img, 0, 0);
+  copy(img, 0, 0, img.width, img.height, mouseX, mouseY, img.width, img.height);
+  noFill();
+}
+
+void mouseClicked(){
+  redraw();
+}
+
